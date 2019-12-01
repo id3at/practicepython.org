@@ -1,4 +1,5 @@
-""" Autor: id3at
+""" 
+Autor: id3at
 """
 #https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html
 # Exercise 3 (and Solution)
