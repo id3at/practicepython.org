@@ -27,8 +27,8 @@ Autor id3at
 
 import random
 
-A = [x for x in range(random.randrange(1, 70))]
-B = [y for y in range(random.randrange(1, 80))]
+A = range(random.randrange(1, 70))
+B = range(random.randrange(1, 80))
 
 S = list(set(z for z in A if z in B))
 print(S)
