@@ -20,6 +20,6 @@ while ZGAD != LICZBA:
         elif ZGAD < LICZBA:
             print('Ta liczba jest za mała')
         else:
-            print(f'Zagadłeż za {len(ILOSC)} razem, liczba która pomyslałem to {LICZBA}')
+            print(f'Zgadłeś za {len(ILOSC)} razem, liczba którą pomyślałem to {LICZBA}')
     except:
         print('Wprowadź cyfrę')
