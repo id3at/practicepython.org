@@ -21,11 +21,11 @@ ale nie na tym samym miejscu dostajesz "bull" \n ''')
 
 while liczba != zgadliczba:
     try:
-        liczba2 = list(liczba)
+        liczba2 = liczba[:]
         zgadliczba = list(input('Wpisz czterocyfrową liczbę: '))
-        zgadliczb2 = list(zgadliczba)
-        cows = list(cow)
-        bulls = list(bull)
+        zgadliczb2 = zgadliczba[:]
+        cows = cow[:]
+        bulls = bull[:]
         ilosc.append(zgadliczba)
         for x, t in enumerate(liczba):
             if t == zgadliczba[x]:
