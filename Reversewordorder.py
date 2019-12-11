@@ -1,16 +1,16 @@
 """
 Autor id3at
-Rewers łancucha znaków
+Rewers zdan
 """
 
 
-lancuch = input('Wprowadz łancuch znaków: ')
+lancuch = input('Wprowadz zdanie: ')
 
 
 
 def reversstr(lancuch):
     """
-    rewers łancucha znaków
+    rewers zdań
     """
     p = lancuch.rsplit()
     c = p[::-1]
