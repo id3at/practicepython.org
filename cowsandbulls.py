@@ -35,7 +35,7 @@ while liczba != zgadliczba:
                 liczba2.remove(z)
                 zgadliczb2.remove(z)
         for n, m in enumerate(zgadliczb2):
-            if m in liczba2 and:
+            if m in liczba2:
                 bulls.append(zgadliczb2[n])
                 liczba2.remove(m)
         print(f'{len(cows)} cow,   {len(bulls)} bull')
