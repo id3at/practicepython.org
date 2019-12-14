@@ -1,6 +1,6 @@
 """
 Autor id3at
-Gra w której komputer zgaduje pomyslaną liczbe
+Gra w której komputer zgaduje pomyslaną liczbe za pomocą algorytmu, wyszukiwanie binarne.
 """
 
 tablica = list(range(0, 101))
