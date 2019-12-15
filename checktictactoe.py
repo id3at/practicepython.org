@@ -14,8 +14,8 @@ c = [t[0] for t in lista]
 d = [t[1] for t in lista]
 e = [t[2] for t in lista]
 
-przekotna1 = [lista[i][i] for i in [0, 1, 2]]
-przekotna2 = [lista[i][2-i] for i in [0, 1, 2]]
+przekotna1 = [lista[i][i] for i in range(3)]
+przekotna2 = [lista[i][2-i] for i in range(3)]
 
 for t in range(3):
     if lista[t].count(2) == 3:
