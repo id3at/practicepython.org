@@ -1,6 +1,6 @@
 """
 Autor id3at
-Program, losuje slowo z pliku, "sowpods".
+Program, losuje angielskie slowo z pliku, "sowpods". http://norvig.com/ngrams/sowpods.txt
 Uzytkownik zgaduje slowo za pomoca wskazywania liter..
 """
 
