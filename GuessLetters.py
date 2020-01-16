@@ -17,8 +17,8 @@ zgad = list(tex)
 slli = list(slowo)
 loss = slli[:]
 
-print(slli)
-print(zgad)
+#print(slli)
+#print(zgad)
 
 while zgad != slli:
     litera = input("zgadnij litere")
