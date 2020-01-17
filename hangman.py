@@ -26,7 +26,7 @@ hangman = ["head", "body", "leg left", "leg right", "arm right", "arm left"]
 itero = 0
 hangmangame = []
 
-print(slli)
+#print(slli)
 print(zgad)
 
 while zgad != slli:
