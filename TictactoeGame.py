@@ -64,10 +64,7 @@ def tictactoe(wejscie, wartosc):
     war = []
     os.system('clear')
     while len(war) == 0:
-        wejscieint = []
-        for t in wejscie: #zamiana wejscia na liczbe
-            t = int(t)
-            wejscieint.append(t)
+        wejscieint = [int(t) for t in wejscie]
         if  gra[wejscieint[0]][wejscieint[1]] == '…':
             gra[wejscieint[0]][wejscieint[1]] = wartosc
             war.append(1)
