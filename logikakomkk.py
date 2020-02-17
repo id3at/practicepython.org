@@ -13,7 +13,7 @@ przekotna1 = [gra[i][i] for i in range(3)]
 przekotna2 = [gra[i][2-i] for i in range(3)]
 
 wszy = [c,d,e]
-
+#obrona
 for l, t in enumerate(wszy):
     if gra[l].count('X') == 2 and gra[l].count('…') == 1:
         lic = gra[l].index('…')
@@ -31,7 +31,7 @@ for l, t in enumerate(wszy):
         lic = przekotna2.index('…')
         gra[lic][2-lic] = "O"
         break
- 
+ #atak
 for l, t in enumerate(wszy):
     if gra[l].count('…') == 2 and gra[l].count('O') == 1:
         lic = gra[l].index('…')
