@@ -31,9 +31,35 @@ for l, t in enumerate(wszy):
         lic = przekotna2.index('…')
         gra[lic][2-lic] = "O"
         break
-    elif gra[l].count('…') >= 2:
-        gra[l][gra[l].index('…')] = "O"
+ 
+for l, t in enumerate(wszy):
+    if gra[l].count('…') == 2 and gra[l].count('O') == 1:
+        lic = gra[l].index('…')
+        gra[l][lic] = "O"
         break
+    elif t.count('…') == 2 and t.count('O') == 1:
+        lic=t.index('…')
+        gra[lic][l] = "O"
+        break
+    elif przekotna1.count('…') == 2 and przekotna1.count('O') == 1:
+        lic = przekotna1.index('…')
+        gra[lic][lic] = "O"
+        break
+    elif przekotna2.count('…') == 2 and przekotna2.count('O') == 1:
+        lic = przekotna2.index('…')
+        gra[lic][2-lic] = "O"
+        break
+
+"""
+elif gra[l].count('…') >= 2:
+    gra[l][gra[l].index('…')] = "O"
+    break
+
+"""
+for e,h in enumerate(gra):
+    print(e,h)
+
+
 for e,h in enumerate(gra):
     print(e,h)
 
