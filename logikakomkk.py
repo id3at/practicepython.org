@@ -42,18 +42,21 @@ def logikakom(x, y, z):
             break
         
     return zbior
-     
-logikakom('O', '…', 'O')
+
+
+logikakom('X', '…', 'O')
+if len(logikakom('X', '…', 'O')) == 0:
+    logikakom('O', '…', 'O')
+    print(len(logikakom('X', '…', 'O')), "pierwszy")
 if len(logikakom('O', '…', 'O')) == 0:
-    logikakom('X', '…', 'O')
-elif len(logikakom('X', '…', 'O')) == 0:
     logikakom('…', 'O', 'O')
-elif len(logikakom('…', 'O', 'O')) == 0:
-    print(len(logikakom('…', 'O', 'O')))
+    print(len(logikakom('O', '…', 'O')), "drugi" )
+if len(logikakom('…', 'O', 'O')) == 0:
     for l, t in enumerate(wszy):
         gra[l].count('…') >= 2
         gra[l][gra[l].index('…')] = "O"
+        print(len(logikakom('…', 'O', 'O')), "trzeci")
         break
-
+       
 for e,h in enumerate(gra):
     print(e,h)
