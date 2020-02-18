@@ -55,10 +55,10 @@ while True:
         break
     elif len(logikakom('…', 'O', 'O')) == 0:
         for l, t in enumerate(wszy):
-            gra[l].count('…') >= 2
-            gra[l][gra[l].index('…')] = "O"
-            print(len(logikakom('…', 'O', 'O')), "trzeci")
-            break
+            if gra[l].count('…') >= 2:
+                gra[l][gra[l].index('…')] = "O"
+                print(len(logikakom('…', 'O', 'O')), "trzeci")
+                break
 
 
        
