@@ -1,4 +1,4 @@
-def liczPierw(liczba):
+def liczPierw(liczba=7):
 
     przedział = int(liczba ** 0.5 + 1)
     zbior = [t for t in range(2, przedział) if liczba % t == 0]
@@ -8,4 +8,4 @@ def liczPierw(liczba):
     else:
         return(f"Liczba {liczba}, jest liczba pierwsza")
 
-print(liczPierw(157))
+print(liczPierw())
