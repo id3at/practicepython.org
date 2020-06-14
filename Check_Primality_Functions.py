@@ -1,5 +1,3 @@
-liczba = 8
-
 def liczPierw(liczba):
 
     przedział = int(liczba ** 0.5 + 1)
@@ -10,4 +8,4 @@ def liczPierw(liczba):
     else:
         return(f"Liczba {liczba}, jest liczba pierwsza")
 
-print(liczPierw(liczba))
+print(liczPierw(157))
