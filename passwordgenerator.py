@@ -4,20 +4,21 @@ Generator hasła.
 Brak limitu długosci hasla.
 """
 import random
+import string
 
 
-znaki = "qwertyuioplkjhgfdsazxcvbnm~!@#$%^&*()_+><?|}{[]0123456789QWERTYUIOPASDFGHJKLZXCVBNM"
+znaki = [t for t in string.printable if t not in "\t, ' ', '\n', '\r', '\x0b', '\x0c'"]
 prehaslo = []
 
 while True:
     try:
         t = int(input("Wpisz długosc generowanego hasła: "))
         break
-    except:
+    except Exception:
         print('Wpisz liczbe !!!')
 
 while t != len(prehaslo):
     prehaslo.append(random.choice(znaki))
-haslo = "".join(str(xt) for xt in prehaslo)
+haslo = "".join(prehaslo)
 
 print(haslo)
